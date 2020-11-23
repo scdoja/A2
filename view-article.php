@@ -45,7 +45,7 @@ echo("<p>");
 		echo("<label>Published: </label>".$row["date"]);
 	echo("</h4>");
 
-		echo($row["content"]);
+	echo($row["content"]);
 echo("</p>");
 
 ?>

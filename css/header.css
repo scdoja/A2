@@ -1,0 +1,7 @@
+header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 115%;
+    position:fixed;
+    padding:10px;
+    z-index:200;
+}
