@@ -7,6 +7,7 @@
 	<link rel="author" content="Jason Do"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+	<link rel="stylesheet" href="css/main.css"/>
 </head>
 </html>
 
@@ -47,9 +48,9 @@ echo("<h3>");
 	echo("<label>By: </label>".$row["author"]);
 echo("</h3>");
 
-echo("<h4>");
+echo("<h3>");
 	echo("<label>Published: </label>".$row["date"]);
-echo("</h4>");
+echo("</h3>");
 
 	echo($row["content"]);
 

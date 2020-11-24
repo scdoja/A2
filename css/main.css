@@ -1,31 +1,87 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
-
-h2{
-    padding-top:100px;
-    padding-bottom:10px;
-    position:relative;
-    left:30px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 115%;
+.article{
+    width:33.33%;
+    background-color: white;
+    border-style: solid;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    position:relative;
-    left:60px;
+.articles{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.author{
+    background-color: black;
+    color:white;
+}
+
+.author2{
+    background-color: purple;
+    color:white;
+}
+
+.feature{
+    border-style: solid;
+    background-color: white;
+    font-size: 1.5em;
+    height:80%;
+}
+
+header{
+    font-size: 1.5em;
+    position:static;
+    z-index:1;
+}
+
+footer{
+    font-size: 1.5em;
+    position:static;
+    z-index:1;
+    padding-top: 20px;
 }
 
 body{
+    font-family: 'Open Sans', sans-serif;
     background-image: url("imgs/world.png");
-    background-size: cover;
     background-color: #EBEBEB;
+    background-repeat:no-repeat;
+    background-size: auto;
 }
 
-footer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding-top:500px;
-    position:fixed;
+h1{
+    font-size: 2.0em;
+    position: relative;
     left:30px;
+}
+
+
+h2{
+    font-size: 1.5em;
+    position: relative;
+    left:30px;
+
+}
+
+h3{
+    font-size: 1.0em;
+    position: relative;
+    left:30px;
+
+}
+
+p{
+    font-size: 16px;
+}
+
+img{
+    width: 80%;
+    height: auto;
+}
+
+#logo{
+    width:250;
+}
+
+#feature{
+    width:350;
 }
