@@ -7,42 +7,34 @@
 	<link rel="author" content="Jason Do"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+	<link rel="stylesheet" href="css/main.css"/>
 </head>
 </html>
 
-<header>
-<nav>
-<img src="./images/logos/immlogo.png" width="120"/>
-	<a href="home-page.php">Home Page</a>   |
-	<a href="about-page.php">About Page</a> |
-	<a href="contact-page.php">Contact Page</a>
-</nav>
-</header>
+<?php
+	include("includes/header.html");
+?>
 
 <!DOCTYPE html>
 	<h2>Register New User</h2>
 <body>
 	<form action="process-register-page.php" method="POST">
-
+<p>
         firstName: <input type="text" name="firstName" />
-
         lastName: <input type="text" name="lastName" />
+        emailAddress: <input type="text" name="emailAddress" />
+        password: <input type="text" name="password" />
+		DOB: <input type="text" name="DOB" />
+</p>
 
-        emailAddress: <input type="text" name="emailAddress" /><br>
-<p>
-        password: <input type="text" name="password" /><br>
-</p>
-<p>
-        DOB: <input type="text" name="DOB" /><br>
-</p>
 <p>
     <label for="userType">Register Your User Type:</label>
     <select name="userType" id="userType">
 		<option value="user" selected>User</option>
 		<option value="public">Public</option>
     </select>
+	<input type="submit" value="Submit">
 </p>
-		<input type="submit" value="Submit">
 </form>
 </body>
 </html>

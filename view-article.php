@@ -7,6 +7,7 @@
 	<link rel="author" content="Jason Do"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+		<link rel="stylesheet" href="css/article.css"/>
 </head>
 </html>
 
@@ -33,23 +34,25 @@ if(isset($_SESSION["personId"])){
 	$row = $stmt->fetch(PDO::FETCH_ASSOC);?>
 		<img src="uploads/<?php echo($row["image"]); ?>" width="500" alt="image"><?php
 echo("<p>");
+
 	echo("<h1>");
 		echo($row["title"]);
 	echo("</h1>");
 
-	echo("<h3>");
+	echo("<h2>");
 		echo("<label>By: </label>".$row["author"]);
+	echo("</h2>");
+
+	echo("<h3>");
+		echo("<label>Published: </label>".$row["date"]);
 	echo("</h3>");
 
-	echo("<h4>");
-		echo("<label>Published: </label>".$row["date"]);
-	echo("</h4>");
-
+echo("<p>");
 	echo($row["content"]);
 echo("</p>");
 
 ?>
-	<a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a><p>
+	<p><a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a>
 <p>
 	<form action = "like.php?articleId=<?php echo($row["articleId"]);?>" method="POST" enctype="multipart/form-data">
 		<input type = "hidden" value = "<?php echo ($personId);?>">

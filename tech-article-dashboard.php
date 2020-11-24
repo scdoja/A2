@@ -7,6 +7,7 @@
 	<link rel="author" content="Jason Do"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+	<link rel="stylesheet" href="css/home.css"/>
 </head>
 </html>
 
@@ -33,7 +34,9 @@
 <?php
 	echo("
         <label>Article Category:</label>".$row["category"]."<br>
+	<div class='author'>
 		<label>Author:</label> ".$row["author"]."<br>
+	</div>
 		<label>Article Title:</label>".$row["title"]."<br>
 		<label>Article Preview:</label> ".$row["preview"]."<br>
 		<label>Article Date:</label> ".$row["date"]."<br>

@@ -7,14 +7,16 @@
 	<link rel="author" content="Jason Do"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+	<link rel="stylesheet" href="css/main.css"/>
 </head>
 </html>
 
 <?php ?>
-<form action="process-login-page.php" method="POST">
+<form action="process-login-page.php" method="POST" id="test">
     username: <input type="text" name="username" />
     Password: <input type="text" name="password" />
-<input type="submit" />   </form>
+<input type="submit" />
+</form>
 
 <p>
 <footer>
