@@ -29,6 +29,8 @@
     <h2>Welcome to IMM News Network</h2>
     	<h3>Sheridan College's News Network for all things Interactive! Browse from Industry, Technical and Career article content.</h3>
 
+
+<section class="feature">
 <?php
     include('includes/db-config.php');
 ?>
@@ -36,7 +38,6 @@
 <?php
     $stmt = $pdo->prepare("SELECT * FROM `article`
     WHERE `article`.`feature` = 1");
-	echo("<div class = 'feature'>");
 
     $stmt->execute();
 
@@ -47,12 +48,12 @@
 <?php
 	echo("<label>Article Category:</label>".$row["category"]."<br><label>Article Title:</label>".$row["title"]."<br><label>Article Preview:</label>".$row["preview"]."<br><label>Article Date:</label> ".$row["date"]);
 ?>
-
+    <br><a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a><br>
     <br><a href="public-view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Public Verison</a>
 	<a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Full Article</a></section>
 <?php
-    echo("</div>");
 }?>
+</section>
 
 <section class="articles">
 
@@ -77,9 +78,9 @@
 		<p class='author'><label>Author:</label> ".$row["author"]."
 		<p><label>Article Title:</label>".$row["title"]."
 		<p><label>Article Preview:</label> ".$row["preview"]."
-		<p><label>Article Date:</label> ".$row["date"]."
-		<p><label>Article URL:</label>".$row["articleLink"]);?>
+		<p><label>Article Date:</label> ".$row["date"]);?>
 
+    	<br><a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a><br>
         <br><a href="public-view-article.php?articleId=<?php echo($row["articleId"]);?>">View Public Verison</a>
         <a href="view-article.php?articleId=<?php echo($row["articleId"]);?>"> View Full Article</a></br>
 
@@ -105,9 +106,9 @@
         <p class = 'author2'><label>Author:</label> ".$row["author"]."<br>
         <p><label>Article Title:</label>".$row["title"]."<br>
         <p><label>Article Preview:</label> ".$row["preview"]."<br>
-        <p><label>Article Date:</label> ".$row["date"]."<br>
-        <p><label>Article URL:</label>".$row["articleLink"]);?>
+        <p><label>Article Date:</label> ".$row["date"]);?>
 
+<br><a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a><br>
 <br><a href="public-view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Public Verison</a>
 <a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>">View Full Article</a></br>
 
@@ -133,9 +134,9 @@
         <p><label>Author:</label> ".$row["author"]."
         <p><label>Article Title:</label>".$row["title"]."
         <p><label>Article Preview:</label> ".$row["preview"]."
-        <p><label>Article Date:</label> ".$row["date"]."
-        <p><label>Article URL:</label>".$row["articleLink"]);?>
+        <p><label>Article Date:</label> ".$row["date"]);?>
 
+<br><a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a><br>
 <br><a href="public-view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Public Verison</a>
 <a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>">View Full Article</a></br>
 
