@@ -2,6 +2,7 @@
 <head>
 	<title>IMM News Network - Feature Article</title>
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+	<link rel="stylesheet" href="css/main2.css"/>
 </head>
 </html>
 
