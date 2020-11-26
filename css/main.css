@@ -1,7 +1,5 @@
 .article{
     width:33.33%;
-    background-color: white;
-    border-style: solid;
     margin:auto;
     margin-top: 4px;
     margin-right: 10px;
@@ -25,22 +23,42 @@
     color:white;
 }
 
-.feature{
+.separticles{
     background-color: white;
-    border-style: solid;
-    font-size: 1.2em;
     margin:auto;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-right: 10px;
     margin-bottom: 20px;
-    margin-left: 2px;
+    margin-left: 10px;
+    padding: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.feature{
+    background-color: white;
+    border:1px solid blue;
+    font-size: 1.2em;
+    height:80vh;
+    margin:auto;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 header{
     font-size: 1.5em;
     position:static;
     z-index:1;
-    width:100%;
+    width:100vw;
+    padding: auto;
+    padding-bottom: 10px;
 }
 
 footer{
@@ -48,11 +66,12 @@ footer{
     position:static;
     z-index:1;
     padding-top: 20px;
-    width:100%;
+    width:100vw;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
     background-image: url("imgs/world.png");
     background-color: #EBEBEB;
     background-repeat:no-repeat;
@@ -70,18 +89,17 @@ h2{
     font-size: 1.5em;
     position: relative;
     left:30px;
-
 }
 
 h3{
     font-size: 1.0em;
     position: relative;
     left:30px;
-
 }
 
 p{
     font-size: 16px;
+    line-height: 20px;
 }
 
 img{
@@ -97,15 +115,41 @@ img{
     width:350;
 }
 
-
 @media screen and (max-width: 480px) {
   .articles {
+    display: flex;
+    justify-content: center;
     flex-direction:column;
+}
 
- }
+ .article{
+     width:auto;
+     background-color: white;
+     border-style: solid;
+     margin:auto;
+     margin-top: 4px;
+     margin-right: 10px;
+     margin-bottom: 5px;
+     margin-left: 2px;
+}
+
+ .feature{
+     height: auto;
+     width: auto;
+     background-color: white;
+     border-style: solid;
+     font-size: 1.4em;
+     line-height: 40px;
+     margin:auto;
+     margin-top: 4px;
+     margin-right: 10px;
+     margin-bottom: 20px;
+     margin-left: 2px;
+}
+
 #logo{
      width:150;
- }
+}
 
 #feature{
     width:80%;
@@ -114,11 +158,12 @@ img{
 
 body{
      font-size: 20px;
-
+     line-height: 40px;
 }
+
 p{
     font-size:25px;
-    line-height: 50px:
+    line-height: 40px;
 }
 
 }

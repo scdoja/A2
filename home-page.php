@@ -7,13 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
 	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/logo.css"/>
 </head>
 </html>
 
 
 <header>
 <nav>
-    <img id="logo" src="./images/logos/immlogo.png" width="250"/>
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
+	    <div class="side back"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
+	  </div>
+	</div>
     <a href="home-page.php">Home Page</a>   |
     <a href="about-page.php">About Page</a> |
     <a href="contact-page.php">Contact Page</a> |
@@ -42,7 +48,7 @@
     $stmt->execute();
 
 	while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-		echo("<h2>Featured Article</h2>")
+		echo("<h2>Featured Article</h2>");
 ?>
     <img id="feature" src="uploads/<?php echo($row['image']);?>" width="350"/></html><br>
 <?php
@@ -50,8 +56,9 @@
 ?>
     <br><a href="<?php echo($row['articleLink']);?>" target = "_blank">External Article Link</a><br>
     <br><a href="public-view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Public Verison</a>
-	<a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Full Article</a></section>
+	<a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>"> View Full Article</a>
 <?php
+
 }?>
 </section>
 
@@ -69,7 +76,7 @@
 	$stmt->execute();
 
 	while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
+	echo("<div class='separticles'");
 ?>
 	<br><img src="uploads/<?php echo($row['image']);?>" width="350"/>
 
@@ -85,6 +92,7 @@
         <a href="view-article.php?articleId=<?php echo($row["articleId"]);?>"> View Full Article</a></br>
 
 <?php
+	echo("</div>");
 }?>
 </section>
 
@@ -97,7 +105,7 @@
     $stmt->execute();
 
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
+	echo("<div class='separticles'");
 ?>
     <br><img src="uploads/<?php echo($row['image']);?>" width="300"/>
 
@@ -113,6 +121,7 @@
 <a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>">View Full Article</a></br>
 
 <?php
+	echo("</div>");
 }?>
 </section>
 
@@ -126,6 +135,7 @@
     $stmt->execute();
 
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+	echo("<div class='separticles'");
 ?>
     <br><img src="uploads/<?php echo($row['image']);?>" width="300"/>
 
@@ -141,8 +151,10 @@
 <a href="view-article.php?articleId=<?php echo($row["articleId"]); ?>">View Full Article</a></br>
 
 <?php
+	echo("</div>");
 }?>
 </section>
+
 </section>
 
 

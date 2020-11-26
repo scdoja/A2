@@ -8,11 +8,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
 	<link rel="stylesheet" href="css/main2.css"/>
+	<link rel="stylesheet" href="css/logo.css"/>
 </head>
 </html>
 
 <header>
-	<img src="./images/logos/immlogo.png" width="120"/>
+	<div class="card-container">
+	  <div class="card">
+		<div class="side"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
+		<div class="side back"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
+	  </div>
+	</div>
 	<a href="home-page.php">Go Back to Home Page</a>
 </header><br>
 
