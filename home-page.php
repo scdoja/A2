@@ -33,8 +33,7 @@
 <body>
 <h1>Homepage</h1>
     <h2>Welcome to IMM News Network</h2>
-    	<h3>Sheridan College's News Network for all things Interactive! Browse from Industry, Technical and Career article content.</h3>
-
+    	<h3>Sheridan College's News Network for all things Interactive! Browse from Industry, Technical and Career articles content.</h3>
 
 <section class="feature">
 <?php
@@ -69,7 +68,7 @@
 ?>
 
 <section class="article">
-<h2>Technical Articles</h2>
+<h2 id = "text">Technical Articles</h2>
 <?php
 	$stmt = $pdo->prepare("SELECT * FROM `article` WHERE `category` = 'Technical'");
 
@@ -154,40 +153,43 @@
 	echo("</div>");
 }?>
 </section>
-
 </section>
 
 
-
 <section>
-<h1>Video</h1>
+<h2>Video</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/RkwPzCO-BY0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 </section>
 </br>
 
-<section>
 <table>
     <tr>
-    <th>Monthly Visitors -</th>
+    <th id = "table"></th>
     <th>April:</th>
-        <td>27 -</td>
-        <th>May:</th>
-        <td>35 -</td>
-        <th>June:</th>
-        <td>50 -</td>
-        <th>July:</th>
-        <td>60 -</td>
-        <th>August:</th>
-        <td>25 -</td>
-        <th>September:</th>
-        <td>15</td>
+        <td></td>
+    <th>May:</th>
+        <td></td>
+    <th>June:</th>
+        <td></td>
+    <th>July:</th>
+        <td></td>
+    <th>August:</th>
+        <td></td>
+    <th>September:</th>
+        <td></td>
         </tr>
 </table>
-</section>
+<script src="js/table.js"></script>
+
+</body>
+
+<br><button id="assist">Reading Assistance</button>
+<button id="assistoff">Reading Assistance OFF</button>
+<script src="js/assist.js"></script>
 
 <footer>
-      IMM News Network Uses Cookies, click here -
-      <a href="cookies-page.php">Accept Cookies</a>
+<p id="cookies" onclick="myFunction()">Accept Cookies.</p>
 </footer>
-</body>
+<script src="js/cookies.js"></script>
+
 </html>

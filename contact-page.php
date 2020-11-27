@@ -16,26 +16,29 @@
 ?>
 
 <!DOCTYPE html>
-	<h2>Contact Page</h2>
+	<h2>Contact Page</h2><br>
+<div id="contact-form">
 <body>
-		<form action="process-contact-page.php" method="POST">
+		<p id="message"></p>
+		<!-- <form action="process-contact-page.php" method="POST"> -->
+		<form id="form">
 <p>
-        First Name: <input type="text" name="firstName" required />
-		Last Name: <input type="text" name="lastName" required />
-		Email Address: <input type="email" name="emailAddress" required /><br>
+        First Name: <input type="text" name="firstName" id="fName" required />
+		Last Name: <input type="text" name="lastName" id="lName" required />
+		Email Address: <input type="email" name="emailAddress" id="emailAddress" required /><br>
 </p>
 <p>
 		Category Interests:
-		<input type="hidden" name="category1" value="0" />
-		<input type="checkbox" name="category1" value="1"/>
+		<input type="hidden" name="category1" value="0"/>
+		<input type="checkbox" name="category1" id="ind" value="1"/>
         	<label for="category1"> Industry</label>
 
-		<input type="hidden" name="category2" value="0"	/>
-		<input type="checkbox" name="category2" value="1"/>
-        	<label for="category2"> Technical</label>
+		<input type="hidden" name="category2" value="0"/>
+		<input type="checkbox" name="category2" id="tech" value="1"/>
+        <label for="category2"> Technical</label>
 
-		<input type="hidden" name="category3" value="0"	/>
-		<input type="checkbox" name="category3" value="1"/>
+		<input type="hidden" name="category3" value="0"/>
+		<input type="checkbox" name="category3" id="car" value="1"/>
 			<label for="category3"> Career</label>
 </p>
 <p>
@@ -45,11 +48,17 @@
         	<option value="contributor">Contributor</option>
         	<option value="administrator">Administrator</option>
 		</select>
-		<input type="submit" value="Submit">
-</p>
-    	</form>
+	</p>
+		<button type="submit" id="submit">Submit</button>
+
+		</form>
+		<script src="js/contact.js"></script>
 </body>
 </html>
+
+<br><button id="assist">Reading Assistance</button>
+<button id="assistoff">Reading Assistance OFF</button>
+<script src="js/assist.js"></script>
 
 <p>
 <footer>
