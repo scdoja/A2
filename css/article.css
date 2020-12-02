@@ -1,0 +1,33 @@
+header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 115%;
+    position:static;
+    z-index:200;
+}
+
+body{
+    background-image: url("imgs/world.png");
+    background-color: #EBEBEB;
+    background-repeat:no-repeat;
+    background-size: auto;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 150%;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 125%;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 125%;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}

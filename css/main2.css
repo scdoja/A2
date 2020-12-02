@@ -1,0 +1,75 @@
+header{
+    font-size: 1.5em;
+    position:static;
+    z-index:1;
+}
+
+footer{
+    border:1px solid blue;
+    background-color: white;
+    font-size: 1.5em;
+    position:static;
+    z-index:1;
+    width:100vw;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("imgs/world.png");
+    background-color: #EBEBEB;
+    background-repeat:no-repeat;
+    background-size: auto;
+}
+
+h1{
+    font-size: 2.0em;
+    position: relative;
+    left:30px;
+}
+
+h2{
+    font-size: 1.5em;
+    position: relative;
+    left:30px;
+}
+
+h3{
+    font-size: 1.0em;
+    position: relative;
+    left:30px;
+}
+
+p{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+.articles{
+    flex-direction:column;
+}
+
+#logo{
+    width:150;
+}
+
+#feature{
+    width:80%;
+    height:auto;
+}
+
+body{
+    font-size: 20px;
+}
+
+p{
+    font-size:25px;
+    line-height: 50px:
+}
+
+}

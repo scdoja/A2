@@ -1,0 +1,175 @@
+.article{
+    width:33.33%;
+    margin:auto;
+    margin-top: 4px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.articles{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.author{
+    background-color: black;
+    color:white;
+}
+
+.author2{
+    background-color: purple;
+    color:white;
+}
+
+.separticles{
+    background-color: white;
+    margin:auto;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.feature{
+    background-color: white;
+    border:1px solid blue;
+    font-size: 1.2em;
+    height:80vh;
+    margin:auto;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav{
+    font-size: 1.5em;
+    position:static;
+    z-index:1;
+    width:100%;
+    padding: auto;
+    padding-bottom: 10px;
+}
+
+footer{
+    border:1px solid blue;
+    background-color: white;
+    font-size: 1.5em;
+    position:static;
+    z-index:1;
+    width:100vw;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+    background-image: url("imgs/world.png");
+    background-color: #EBEBEB;
+    background-repeat:no-repeat;
+    background-size: auto;
+}
+
+h1{
+    font-size: 2.0em;
+    position: relative;
+    left:30px;
+}
+
+h2{
+    font-size: 1.5em;
+    position: relative;
+    left:30px;
+}
+
+h3{
+    font-size: 1.0em;
+    position: relative;
+    left:30px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+img{
+    width: 80%;
+    height: auto;
+}
+
+#logo{
+    width:300px;
+}
+
+#feature{
+    width:350px;
+}
+
+@media screen and (max-width: 480px) {
+.articles{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.article{
+     width:auto;
+     background-color: white;
+     border-style: solid;
+     margin:auto;
+     margin-top: 4px;
+     margin-right: 10px;
+     margin-bottom: 5px;
+     margin-left: 2px;
+}
+
+.feature{
+     height: auto;
+     width: auto;
+     background-color: white;
+     border-style: solid;
+     font-size: 20px;
+     line-height: 40px;
+     margin:auto;
+     margin-top: 4px;
+     margin-right: 10px;
+     margin-bottom: 20px;
+     margin-left: 2px;
+}
+
+#logo{
+     width:150px;
+}
+
+#feature{
+    width:80%;
+    height:auto;
+}
+
+body{
+     font-size: 20px;
+     line-height: 40px;
+}
+
+p{
+    font-size:25px;
+    line-height: 40px;
+}
+
+}

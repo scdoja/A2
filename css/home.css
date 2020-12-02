@@ -1,0 +1,123 @@
+header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 115%;
+    position:static;
+    z-index:200;
+}
+
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 135%;
+}
+
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 135%;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left:30px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+table{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url("imgs/world.png");
+    background-color: #EBEBEB;
+    background-repeat:no-repeat;
+    background-size: auto;
+}
+
+label{
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 115%;
+    position:static;
+    z-index:200;
+}
+
+.art{
+    font-size: 145%;
+    font-family: 'Open Sans', sans-serif;
+    color:red;
+    position: relative;
+    left:30px;
+}
+
+.intro{
+    font-size: 125%;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left:30px;
+}
+
+.author{
+    background-color: black;
+    color:white;
+}
+
+.author2{
+    background-color: purple;
+    color:white;
+}
+
+.feature{
+    font-size:120%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    padding-bottom: 100px;
+}
+
+.techarticles{
+    background-color: white;
+}
+
+.careerarticles{
+    background-color: white;
+}
+
+.industryarticles{
+    background-color: white;
+}
+
+.techa{
+    display:flex;
+    flex-direction:column;
+
+}
+
+.cara{
+    display:flex;
+    flex-direction:column;
+}
+
+.ind{
+    display:flex;
+    flex-direction:column;
+}
