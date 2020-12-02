@@ -57,12 +57,9 @@
 </html>
 
 <br><button id="assist">Reading Assistance</button>
-<button id="assistoff">Reading Assistance OFF</button>
 <script src="js/assist.js"></script>
 
-<p>
 <footer>
-	IMM News Network Uses Cookies, click here -
-	<a href="cookies-page.php">Accept Cookies</a>
+<p id="cookies" onclick="myFunction()">Accept Cookies.</p>
 </footer>
-</p>
+<script src="js/cookies.js"></script>

@@ -12,23 +12,23 @@
 </html>
 
 
-<header>
-<nav>
-	<div class="card-container">
-	  <div class="card">
-	    <div class="side"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
-	    <div class="side back"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
-	  </div>
-	</div>
-    <a href="home-page.php">Home Page</a>   |
-    <a href="about-page.php">About Page</a> |
-    <a href="contact-page.php">Contact Page</a> |
-    <a href="register-page.php">Register</a>   |
-    <a href="login-page.php">Login</a> |
-    <a href="logout-page.php">Logout</a>
-</nav>
-</header>
 
+<header>
+	<nav>
+		<div class="card-container">
+			<div class="card">
+				<div class="side"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
+				<div class="side back"><img id="logo" src="./images/logos/immlogo.png" width="250" alt="Logo"></div>
+			</div>
+		</div>
+		<a href="home-page.php">Home Page</a>   |
+		<a href="about-page.php">About Page</a> |
+		<a href="contact-page.php">Contact Page</a> |
+		<a href="register-page.php">Register</a>   |
+		<a href="login-page.php">Login</a> |
+		<a href="logout-page.php">Logout</a>
+	</nav>
+</header>
 <!DOCTYPE html>
 <body>
 <h1>Homepage</h1>
@@ -164,18 +164,18 @@
 
 <table>
     <tr>
-    <th id = "table"></th>
-    <th>April:</th>
+	<h2 id="table"></h2>
+    <th></th>
         <td></td>
-    <th>May:</th>
+    <th></th>
         <td></td>
-    <th>June:</th>
+    <th></th>
         <td></td>
-    <th>July:</th>
+    <th></th>
         <td></td>
-    <th>August:</th>
+    <th></th>
         <td></td>
-    <th>September:</th>
+    <th></th>
         <td></td>
         </tr>
 </table>
@@ -184,7 +184,6 @@
 </body>
 
 <br><button id="assist">Reading Assistance</button>
-<button id="assistoff">Reading Assistance OFF</button>
 <script src="js/assist.js"></script>
 
 <footer>

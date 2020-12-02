@@ -106,7 +106,12 @@ $personId = $_SESSION["personId"];
 }
 ?>
 
+<br><button id="assist">Reading Assistance</button>
+<script src="js/assist.js"></script>
+
 <footer>
-	IMM News Network Uses Cookies, click here -
-	<a href="cookies-page.php">Accept Cookies</a>
+<p id="cookies" onclick="myFunction()">Accept Cookies.</p>
 </footer>
+<script src="js/cookies.js"></script>
+
+</html>

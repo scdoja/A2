@@ -7,7 +7,6 @@ var message = document.querySelectorAll("#message")[0];
 var category1 = document.querySelectorAll("#ind")[0];
 var category2 = document.querySelectorAll("#tech")[0];
 var category3 = document.querySelectorAll("#car")[0];
-
 var button = document.querySelectorAll("#submit")[0];
 
 button.addEventListener("click", insertdata, false);
@@ -27,6 +26,5 @@ function insertdata(event) {
     };
     xhr.open("POST","process-contact-page.php",true);
     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    xhr.send(`firstName=${firstName.value}&lastName=${lastName.value}&emailAddress=${emailAddress.value}&roles=${roles.value}&category1=${category1.value}
-		&category2=${category2.value}&category3=${category3.value}`);
+    xhr.send(`firstName=${firstName.value}&lastName=${lastName.value}&emailAddress=${emailAddress.value}&roles=${roles.value}&category1=${category1.value}&category2=${category2.value}&category3=${category3.value}`);
 }

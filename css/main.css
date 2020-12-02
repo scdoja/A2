@@ -52,11 +52,11 @@
     padding-left: 15px;
 }
 
-header{
+nav{
     font-size: 1.5em;
     position:static;
     z-index:1;
-    width:100vw;
+    width:100%;
     padding: auto;
     padding-bottom: 10px;
 }
@@ -91,7 +91,6 @@ h1{
     left:30px;
 }
 
-
 h2{
     font-size: 1.5em;
     position: relative;
@@ -115,21 +114,21 @@ img{
 }
 
 #logo{
-    width:300;
+    width:300px;
 }
 
 #feature{
-    width:350;
+    width:350px;
 }
 
 @media screen and (max-width: 480px) {
-  .articles {
+.articles{
     display: flex;
     justify-content: center;
     flex-direction:column;
 }
 
- .article{
+.article{
      width:auto;
      background-color: white;
      border-style: solid;
@@ -140,12 +139,12 @@ img{
      margin-left: 2px;
 }
 
- .feature{
+.feature{
      height: auto;
      width: auto;
      background-color: white;
      border-style: solid;
-     font-size: 1.4em;
+     font-size: 20px;
      line-height: 40px;
      margin:auto;
      margin-top: 4px;
@@ -155,7 +154,7 @@ img{
 }
 
 #logo{
-     width:150;
+     width:150px;
 }
 
 #feature{

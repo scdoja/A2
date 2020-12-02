@@ -73,9 +73,12 @@ echo("</p>");?>
 
 	<p><?php echo $row?> total likes for this article</p>
 
-<p>
-<footer>
-	IMM News Network Uses Cookies, click here -
-	<a href="cookies-page.php">Accept Cookies</a>
-</footer>
-</p>
+	<br><button id="assist">Reading Assistance</button>
+	<script src="js/assist.js"></script>
+
+	<footer>
+	<p id="cookies" onclick="myFunction()">Accept Cookies.</p>
+	</footer>
+	<script src="js/cookies.js"></script>
+
+	</html>
