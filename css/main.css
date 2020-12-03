@@ -121,7 +121,7 @@ img{
     width:350px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
 .articles{
     display: flex;
     justify-content: center;
